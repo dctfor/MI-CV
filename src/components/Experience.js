@@ -103,7 +103,7 @@ const Experience = () => {
             <h2>Experience <span role="img" aria-label="experience">💼</span></h2>
             <input
                 type="text"
-                placeholder="Buscar..."
+                placeholder="Search..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="form-control mb-3"
