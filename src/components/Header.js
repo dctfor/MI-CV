@@ -6,7 +6,7 @@ const Header = () => (
     <Container>
         <Row className="align-items-center mb-4">
             <Col xs={12} md={3} className="text-center">
-                <Image src="/perfil.webp" roundedCircle fluid style={{ maxWidth: '150px', height: 'auto' }} />
+                <Image src="/MI-CV/perfil.webp" roundedCircle fluid style={{ maxWidth: '150px', height: 'auto' }} />
             </Col>
             <Col xs={12} md={9} className="text-center text-md-left">
                 <h1 className="m-3">Christian Andrés López Valdez</h1>

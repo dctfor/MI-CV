@@ -100,7 +100,7 @@ const Experience = () => {
 
     return (
         <Container className="my-5">
-            <h2>Experiencia Laboral</h2>
+            <h2>Experience <span role="img" aria-label="experience">💼</span></h2>
             <input
                 type="text"
                 placeholder="Buscar..."

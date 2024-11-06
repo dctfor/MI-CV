@@ -11,7 +11,7 @@ const courses = [
 
 const Courses = () => (
   <Container className="my-5">
-    <h2>Cursos</h2>
+    <h2>Courses  <span role="img" aria-label="books">📚</span></h2>
     <ListGroup>
       {courses.map((course, index) => (
         <ListGroup.Item key={index}>{course}</ListGroup.Item>

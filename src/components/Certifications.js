@@ -9,7 +9,7 @@ const certifications = [
 
 const Certifications = () => (
   <Container className="my-5">
-    <h2>Certificaciones</h2>
+    <h2>Certifications <span role="img" aria-label="scroll">📜</span></h2>
     <ListGroup>
       {certifications.map((cert, index) => (
         <ListGroup.Item key={index}>{cert}</ListGroup.Item>

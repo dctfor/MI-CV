@@ -145,36 +145,34 @@ const badgeColors = {
 
 const Skills = () => (
   <Container className="my-5">
-  <h2>Habilidades
-    <div>
+    <h2>
       <OverlayTrigger
         placement="right"
         overlay={
           <Tooltip id="tooltip-info">
-            Even though I have a tech or skill listed here, it might be self-learned rather than acquired through a job.
+            <div>Even though I have a tech or skill listed here, it might be self-learned rather than acquired through a job.</div><div> And there might be missing skills.</div>
           </Tooltip>
         }
       >
-        <span><FaInfoCircle className="ml-2" /></span>
-      </OverlayTrigger>
-    </div>
-  </h2>
+        <span><FaInfoCircle/></span>
+      </OverlayTrigger>{' '}Skills
+    </h2>
 
-  {skills.map((skillGroup, index) => (
-    <div key={index} className="mb-3">
-    <h4>{skillGroup.category}</h4>
-    {skillGroup.skills.map((skill, idx) => (
-      <Badge 
-      key={idx} 
-      pill 
-      style={{ backgroundColor: badgeColors[skillGroup.category] }} 
-      className="mx-1 custom-badge"
-      >
-      {skill}
-      </Badge>
+    {skills.map((skillGroup, index) => (
+      <div key={index} className="mb-3">
+        <h4>{skillGroup.category}</h4>
+        {skillGroup.skills.map((skill, idx) => (
+          <Badge
+            key={idx}
+            pill
+            style={{ backgroundColor: badgeColors[skillGroup.category] }}
+            className="mx-1 custom-badge"
+          >
+            {skill}
+          </Badge>
+        ))}
+      </div>
     ))}
-    </div>
-  ))}
   </Container>
 );
 
