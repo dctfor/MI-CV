@@ -7,6 +7,9 @@ const courses = [
   'SoftSkills Course - Udemy, 2021',
   'Docker for beginners - DevOps - Udemy, 2021',
   'Selenium WebDriver w/ Docker, Jenkins & AWS - Udemy, 2021',
+  'Software Architecture - Udemy, 2022',
+  'TypeScript decorators - Udemy, 2022',
+  'Data Science: Python for Data Analysis - Udemy, 2024',
 ];
 
 const Courses = () => (
